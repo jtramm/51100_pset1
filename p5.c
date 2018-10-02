@@ -18,30 +18,32 @@ double **dmatrix_contiguous(size_t m, size_t n)
 void work_kernel_dynamic(double **U, int m, int n)
 {
 	int i,j;
-	double a = 1.0, b = 0.5, c;
+	double a = 1.0, b = 0.5, c = 0.0;
 
 	for( i=1; i < (m-1); i++)
 		for( j=1; j < (n-1); j++)
 		{
-			c = ( a * (U[i+1][j] + U[i-1][j]) ) +
+			c += ( a * (U[i+1][j] + U[i-1][j]) ) +
 				( b * (U[i][j+1] + U[i][j-1]) ) +
 				( (1 - (2*a) - (2*b)) * U[i][j] );
 		}
+	printf("c: %.2lf\n", c);
 	return;
 }
 
 void work_kernel_static(double U[m][n], int m, int n)
 {
 	int i,j;
-	double a = 1.0, b = 0.5, c;
+	double a = 1.0, b = 0.5, c = 0.0;
 
 	for( i=1; i < (m-1); i++)
 		for( j=1; j < (n-1); j++)
 		{
-			c = ( a * (U[i+1][j] + U[i-1][j]) ) +
+			c += ( a * (U[i+1][j] + U[i-1][j]) ) +
 				( b * (U[i][j+1] + U[i][j-1]) ) +
 				( (1 - (2*a) - (2*b)) * U[i][j] );
 		}
+	printf("c: %.2lf\n", c);
 	return;
 }
 
