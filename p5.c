@@ -27,7 +27,7 @@ void work_kernel_dynamic(double **U, int m, int n)
 				( b * (U[i][j+1] + U[i][j-1]) ) +
 				( (1 - (2*a) - (2*b)) * U[i][j] );
 		}
-	printf("c: %.2lf\n", c);
+	printf("c: %.2f\n", c);
 	return;
 }
 
@@ -43,7 +43,7 @@ void work_kernel_static(double U[m][n], int m, int n)
 				( b * (U[i][j+1] + U[i][j-1]) ) +
 				( (1 - (2*a) - (2*b)) * U[i][j] );
 		}
-	printf("c: %.2lf\n", c);
+	printf("c: %.2f\n", c);
 	return;
 }
 
