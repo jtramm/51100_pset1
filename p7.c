@@ -4,7 +4,7 @@
 #define MAX_LINES 1000
 #define MAX_CHAR_PER_LINE 1000
 
-int read_file(char *filename, char text[][MAX_CHAR_PER_LINE]);
+int read_file(char *filename, char text[][MAX_CHAR_PER_LINE])
 {
 	/* Your code here */
 }

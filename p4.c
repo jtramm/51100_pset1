@@ -25,7 +25,7 @@ int main(int argc, char **argv){
 	for(i=0; i<n; i++){
 		for(j=0; j<n; j++){
 			for(k=0; k<n; k++){
-				printf("%g ", matrix[i][j][k]);
+				printf("%.1f ", matrix[i][j][k]);
 			}
 		printf("\n");
 		}
@@ -36,7 +36,7 @@ int main(int argc, char **argv){
 	for(i=0; i<n; i++){
 		for(j=0; j<n; j++){
 			for(k=0; k<n; k++){
-				printf("%g ", matrix[0][0][n*n*i + n*j + k]);
+				printf("%.1f ", matrix[0][0][n*n*i + n*j + k]);
 			}
 		printf("\n");
 		}
