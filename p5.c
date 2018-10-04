@@ -31,7 +31,7 @@ void work_kernel_dynamic(double **U, int m, int n)
 	return;
 }
 
-void work_kernel_static(double U[m][n], int m, int n)
+void work_kernel_static(double U[M][N], int m, int n)
 {
 	int i,j;
 	double a = 1.0, b = 0.5, c = 0.0;
