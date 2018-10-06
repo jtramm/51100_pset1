@@ -19,8 +19,7 @@ int main(int argc, char **argv){
 	char **line_pntrs;
 	char in[MAX_LINES][MAX_CHAR_PER_LINE];
 	char *filename = argv[1];
-	int i=0,j=0, n;
-	char c;
+	int i=0, n;
 
 	n = read_file(filename,in);
 
