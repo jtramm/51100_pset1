@@ -32,7 +32,7 @@ int main(int argc, char **argv){
 	printf("\n");
 	}
 
-	printf("Matrix with 2D indexing:\n");
+	printf("Matrix with 3D indexing:\n");
 	for(i=0; i<n; i++){
 		for(j=0; j<n; j++){
 			for(k=0; k<n; k++){
