@@ -3,8 +3,8 @@
 #include<string.h>
 #include<ctype.h>
 
-#define MAX_WORDS 1000
-#define MAX_CHAR_PER_WORD 25
+#define MAX_WORDS 2000
+#define MAX_CHAR_PER_WORD 50
 
 int main(int argc, char **argv)
 {
